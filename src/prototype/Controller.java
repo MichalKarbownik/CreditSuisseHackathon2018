@@ -41,11 +41,6 @@ public class Controller {
 
     }
 
-    @FXML
-    void onRandomizeButtonAction(ActionEvent event) {
-
-    }
-
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         assert textAreaOutput != null : "fx:id=\"textAreaOutput\" was not injected: check your FXML file 'Prototype.fxml'.";
