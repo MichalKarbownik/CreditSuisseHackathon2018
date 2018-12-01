@@ -1,3 +1,7 @@
+/**
+ * Sample Skeleton for 'Prototype.fxml' Controller Class
+ */
+
 package prototype;
 
 import java.net.URL;
@@ -11,38 +15,33 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
-    @FXML
+    @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
 
-    @FXML
+    @FXML // URL location of the FXML file that was given to the FXMLLoader
     private URL location;
 
-    @FXML
-    private TextArea textAreaOutput;
+    @FXML // fx:id="textAreaOutput"
+    private TextArea textAreaOutput; // Value injected by FXMLLoader
 
-    @FXML
-    private Text inputNumberLabel;
+    @FXML // fx:id="inputNumberLabel"
+    private Text inputNumberLabel; // Value injected by FXMLLoader
 
-    @FXML
-    private TextField inputNumberField;
+    @FXML // fx:id="inputNumberField"
+    private TextField inputNumberField; // Value injected by FXMLLoader
 
-    @FXML
-    private Button betButton;
+    @FXML // fx:id="betButton"
+    private Button betButton; // Value injected by FXMLLoader
 
-    @FXML
-    private Button randomizeButton;
+    @FXML // fx:id="randomizeButton"
+    private Button randomizeButton; // Value injected by FXMLLoader
 
     @FXML
     void onBetButtonAction(ActionEvent event) {
 
     }
 
-    @FXML
-    void onRandomizeButtonAction(ActionEvent event) {
-
-    }
-
-    @FXML
+    @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         assert textAreaOutput != null : "fx:id=\"textAreaOutput\" was not injected: check your FXML file 'Prototype.fxml'.";
         assert inputNumberLabel != null : "fx:id=\"inputNumberLabel\" was not injected: check your FXML file 'Prototype.fxml'.";
